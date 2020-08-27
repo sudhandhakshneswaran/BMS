@@ -36,7 +36,7 @@ public class CurdRestController {
 	@PostMapping("/addproduct")
 	public Product saveProduct(@RequestBody Product product)
 	{
-		return service.saveProductToDB(product);
+		return service.saveProductToDB(product); 
 	}
 	
 	@GetMapping("/getproductbyid/{id}")
